@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulário de contato</legend>
+                <div><input type="text" name="nome" placeholder="Digite seu nome:"></div>
+                <div><input type="text" name="email" placeholder="Digite seu e-mail:"></div>
+            <div>
+                <select name="formação">
+                    <option disabled selected>Qual sua formação?</option>
+                    <option>Ensino médio</option>
+                    <option>Ensino superior</option>
+                    <option>Pós-graduação</option>
+                </select>
+            </div>
+                <h2>Você tem disponibilidade para viagens?</h2>
+            <div class="input">
+                <div><input type="radio" name="disponibilidade" value=""><span>Sim</span></div>
+                <div><input type="radio" name="disponibilidade" value=""><span>Não</span></div>
+            </div>
+                <h2>Jornada</h2>
+            <div class="input">
+                <div><input type="checkbox" name="jornada" value=""><span>Parcial</span></div>
+                <div><input type="checkbox" name="jornada" value=""><span>Integral</span></div>
+                <div><input type="checkbox" name="jornada" value=""><span>Presencial</span></div>
+                <div><input type="checkbox" name="jornada" value=""><span>Home-office</span></div>
+            </div>
+                <div>
+                    <textarea placeholder="Informações adicionais"></textarea>
+                </div>
+            <div>
+                <input type="submit" name="acao" value="Enviar!">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

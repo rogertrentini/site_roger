@@ -1,1 +1,100 @@
+/*Reset da página. Sempre inserir esses códigos!*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adiciona box-sizing para garantir o controle do espaço */
+}
 
+html, body{
+    height: 100%;
+    font-family: tahoma; /* Definir uma fonte padrão para todo o documento */
+}
+
+/*Formulário*/
+
+form{/*Introdução ao design responsivo.*/
+    width: 96%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 2%; /* Adiciona padding para garantir espaço nas laterais */
+}
+
+form fieldset{
+    padding: 20px 20px;
+    border: 1px solid #ccc;
+}
+
+form legend{
+    text-align: left;
+    font-size: 17px;
+    color: rgb(130, 130, 130);
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 15px;
+    width: 80%;
+    padding: 10px 13px;
+    border: 1px solid #ccc;
+}
+
+form input[type=text]:focus, form select:focus, form textarea:focus{
+    outline: 0;
+    border-color: #888; /* Adiciona uma borda de foco */
+}
+
+form select{
+    color: rgb(130, 130, 130);
+    width: calc(80% + 26px);
+    margin-top: 30px;
+    padding: 10px 13px;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+form h2{
+    font-size: 16px;
+    margin-top: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.input{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.input span{
+    margin-left: 13px;
+    font-size: 15px;
+    color: rgb(130, 130, 130);
+}
+
+form textarea{
+    border: 1px solid #ccc;
+    margin: 15px auto; /* Centraliza o campo */
+    width: 100%; /* Use 100% para garantir que o elemento ocupe todo o espaço disponível */
+    height: 140px;
+    padding: 10px 13px;
+    resize: none;
+    display: block; /* Alterado para block para facilitar a responsividade */
+}
+
+form input[type=submit]{
+    display: block; /* Faz o botão ser um bloco */
+    margin: 15px auto 0 auto; /* Centraliza o botão */
+    border: 0;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgb(130, 130, 130);
+    color: white;
+    background-color: rgb(140, 140, 140);
+}
+
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+    background-color: rgb(160, 160, 160); /* Adiciona estilos para hover e focus */
+    border-color: rgb(150, 150, 150);
+}

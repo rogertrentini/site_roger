@@ -13,9 +13,11 @@ html, body{
 
 /*Menu inicial*/
 .menu{
-    width: 900px;
+    width: 96%;
+    max-width: 600px;
     margin: 30px auto;
     text-align: center;
+    padding: 0 2%;
 }
 
 .menu a{
